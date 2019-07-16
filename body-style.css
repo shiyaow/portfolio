@@ -1,0 +1,196 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 500vh;
+}
+.page-container {
+  width: 100vw;
+  height: 100vh;
+}
+.bg-img {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h4{
+  font-family: 'Lato', sans-serif;
+}
+/*nav {
+    display: flex;
+    margin-top: 3.5%;;
+}*/
+#nav-top {
+  display: flex;
+  padding-top: 3.5%;
+  background-color: transparent;
+  padding-left: 12%;
+  padding-right: 12%;
+  transition: background-color, margin-top, 0.5s;
+}
+span.logo>img {
+  width: 50px;
+  height: 50px;
+}
+span.logo {
+  margin-right: 20px;
+}
+div.navbar-text {
+    margin-right: auto;
+    color: white;
+    font-size: 1.2em;
+    cursor: context-menu;
+}
+li.nav-item {
+  cursor: pointer;
+  /*background-color: black, 0.8;*/
+  color: white;
+  font-size: 0.88em;
+  margin: 0 10px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 3px;
+  transition: background-color, color, 0.6s;
+}
+li.nav-item:hover {
+  background-color: #d14d4f;
+  color: white;
+  /*padding-top: 6px;*/
+}
+li.bordered {
+  /*border: 2px solid #ff5e61;*/
+  background-color: #ff5e61;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+li.nav-item >a {
+  text-decoration: none;
+  display: block;
+}
+
+li.nav-item>a:link {
+  color: white;
+}
+li.nav-item >a:visited {
+  color: white;
+}
+/*li.nav-item>a:visited {
+  color: none;
+}
+li.nav-item>a:hover {
+  color: #ff5e61;
+}*/
+/*******************************************************/
+
+div.navbar2{
+    position: relative;
+    top: 100px;
+}
+/*video bg********************************************************/
+div.video-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+#bg-video{
+  position: absolute;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.bg-curtain-black{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.65;
+  position: absolute;
+  top: 0;
+}
+/*introduction on home page************/
+.centered-introduction {
+  position: absolute;
+  bottom: 5vh;
+  left: 12vw;
+  height: 80vh;
+  width: 60vw;
+  /*center positioned and less viewport margin when displayed on smaller screens*/
+  padding-top: 10%;
+  color: white;
+}
+/******************link*******************/
+.centered-introduction>a:link {
+  color: rgb(255, 94, 97);
+}
+.centered-introduction>a:visited {
+  color: rgb(255, 94, 97);
+}
+/*downscroll button *********************/
+#downscroll-button {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 5%;
+  margin-left: 50%;
+  margin-right: 50%;
+
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  font-weight: lighter;
+  animation: bounce 3s infinite;
+}
+i {
+  font-size: 30px;
+}
+span.animated-blink {
+  color: pink;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0% {color: white;}
+  10% {color: dimgrey;}
+  40% {color: white;}
+  60% {color: dimgrey;}
+  80% {color: white;}
+  100% {color: white;}
+}
+@keyframes bounce {
+  0% {bottom: 0.5%;}
+  10% {bottom: 5%;}
+  40% {bottom: 0.5%;}
+  60% {bottom: 3%;}
+  80% {bottom: 0.5%;}
+  90% {bottom: 2%;}
+  100% {bottom: 0%;}
+}
+@media screen and (max-width: 1000px) {
+  div.centered-introduction {
+    width: 80vw;
+    left: 10vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hide {
+    display: none;
+  }
+  #nav-top {
+    padding-left: 5px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  }

@@ -1,0 +1,69 @@
+.color1 {
+  background-color: rgba(222, 225, 229, 0.7);
+  position: relative;
+}
+
+/*self-introduction with a slightly greyish background color****/
+div.text-centered {
+  width: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-align: center;
+}
+
+.bg-white {
+  backgournd-color: white;
+}
+.about {
+  padding-top: 8%;
+  padding-bottom: 3%;
+}
+/*h5 {
+  display: none;
+}*/
+/***********text blink animation***/
+.animated-text {
+  display: block;
+  font-size: 3em;
+  animation-name: textblink;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+/***********skill card************/
+div.skills {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  width: 76%;
+
+  margin-right: 12%;
+  margin-left: 12%;
+  margin-top: 5%;
+  border-radius: 5px;
+  border: 0.5px solid rgba(222, 225, 229, 0.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  box-shadow: 2px 2px 5px lightgrey;
+}
+.skill-columns {
+  width: 33.3%;
+  text-align: center;
+}
+
+@keyframes textblink {
+  0% {color: white;}
+  20% {color: black;}
+  80% {color: black;}
+  100% {color: white;}
+
+}
+@media screen and (max-width: 1000px) {
+  div.skills {
+    width: 100vw;
+    margin-left: 0;
+  }
+  .skill-columns {
+    width: 90%;
+  }
+}
