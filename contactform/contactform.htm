@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>portfolio contact form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+
+<body>
+
+<div class="header">
+  <a href="../index.htm"><img src="../images/logo.jpg"></a>
+  <a href="../index.htm">Shiyao Wang</br>Front-end developer</a>
+</div>
+<!--<span class="avatar">
+  <img src="../images/selfieavatar.jpg">
+</span>-->
+
+<!--Thank you for reaching out-->
+<div class="middle-placed">
+  How can I help today?
+</div>
+
+<!--create the contact form-->
+<div class="form-container">
+  <form action="action_page/php">
+
+
+    <label for="firstname">Name</label>
+    <label style="margin-left: 50%;" for="lastname">Email</label></br>
+    <input type="text" id="firstname" name="firstname">
+    <input style="float: right;" type="text" id="email" name="email">
+  </br></br></br>
+    <label for="intention"> Reason for contact</label>
+    <select id="intention" name="intention">
+      <option value="noreason">no particular reason :)</option>
+      <option value="recruiting">we are hiring</option>
+      <option value="coorperation">need to talk about a project</option>
+    </select></br></br>
+
+    <label for="message">Message</label></br>
+    <textarea id="message" name="message" placeholder="your message here.."></textarea></br>
+
+    <input type="submit" value="send">
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
